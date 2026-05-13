@@ -1,0 +1,125 @@
+/* Reset Estándar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Fondo con una textura sutil de papel para la estética Slow Life */
+    background-color: #fcfaf8;
+    background-image: url('https://www.transparenttextures.com/patterns/felt.png');
+    font-family: 'Lato', sans-serif;
+    color: #5d5d5d;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+/* Contenedor tipo Blog */
+.main-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+
+/* Header y Logo */
+.site-header {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2ece8;
+}
+
+.logo {
+    height: 100px; /* Ajustado para que se aprecie el detalle del templo */
+    width: auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px;
+    background-color: #fdf8f5; /* Color crema suave del logo */
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #9e6d7a; /* Color rosa viejo extraído del logo */
+    letter-spacing: 6px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #a0a0a0;
+    margin-top: 10px;
+}
+
+/* Cuerpo del sitio */
+.content-body {
+    padding: 60px 40px;
+}
+
+.intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    margin-top: 30px;
+    border: 1px solid #f2ece8;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Footer Profesional */
+.site-footer {
+    background-color: #f9f9f9;
+    padding: 50px 40px 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-item h4 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9e6d7a;
+    margin-bottom: 10px;
+}
+
+.footer-item p {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+    font-size: 0.75rem;
+    color: #bbb;
+}
