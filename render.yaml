@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kali-days-web
+    runtime: php
+    plan: free
+    buildCommand: composer install
+    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_KEY
+        value: base64:bgwP/eeNkPqXNaG9QyztXemxm79YnWkevigZ6rX69C4=
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: DB_DATABASE
+        value: database/database.sqlite
